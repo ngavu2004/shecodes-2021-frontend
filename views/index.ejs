@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Shecodes | <%= title %></title>
+
+</head>
+
+<body>
+    <div class="container-fluid" style="margin-top:20px">
+        <div class="row">
+          <div class="left-sidebar col-sm-2">
+            <h2>Filter</h2>
+            <form>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location" aria-describedby="locate" placeholder="Enter your location">
+                </div>
+                <button type="submit" class="btn btn-primary">Find</button>
+            </form>
+          </div>
+          <div class="main col-sm-8">
+            <h2>Bản đồ </h2>
+            
+          </div>
+          <div class="right-sidebar col-sm-2 list-group">
+            <a href="https://quyvacxincovid19.gov.vn/" class=" list-group-item list-group-item-action list-group-item-primary">Quỹ Vaccine COVID-19</a>
+            <a href="http://chinhphu.vn/portal/page/portal/chinhphu/trangchu" class="list-group-item list-group-item-action  list-group-item-primary">Trang thông tin chính phủ</a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>© Shecodes 2021</p>
+        </footer>
+
+    </div>
+    
+    <!--/.container-->
+    <script>
+        $('#offcanvasleft').click(function () {
+            $('.row-offcanvas-left').toggleClass('active');
+        });
+
+        $('[data-toggle=offcanvasright]').click(function () {
+            $('.row-offcanvas-right').toggleClass('active');
+        });
+    </script>
+</body>
+
+</html>

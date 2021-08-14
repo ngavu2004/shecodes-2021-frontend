@@ -1,0 +1,13 @@
+.container-fluid {
+    height: 100vh;
+}
+
+.left-sidebar {
+    padding: 5%;
+    height: 80vh;
+    background-color: #CBE4F9;
+}
+
+.righ-sidebar a {
+    background-color: #CBE4F9;
+}
